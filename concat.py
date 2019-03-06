@@ -21,7 +21,8 @@ for file in os.listdir(os.path.abspath(args.indir)):
                 headerTaken = True
             else:
                 with open(args.outputFile, "a+") as outFile:
-                    for i in range(0,args.hd):
-                        inFile.readline()
+                    if args.hd >= 0:
+                        for i in range(0,args.hd):
+                            inFile.readline()
                     shutil.copyfileobj(inFile, outFile)
 

@@ -1,5 +1,7 @@
 import os
 import argparse
+
+
 def main():
     parser = argparse.ArgumentParser(description="File Accumulator")
     parser.add_argument("indir", metavar="ID",
@@ -14,7 +16,7 @@ def main():
     for file in os.listdir(inputDir):
         fileName = os.path.join(inputDir, file)
         if (os.path.isfile(fileName) & ((os.path.splitext(fileName)[1] == ".csv") |(os.path.splitext(fileName)[1] == ".gz"))):
-            outString = outString + fileName + "\n"
+            outString += fileName + "\n"
 
     with open(outFileName, "w") as file:
         file.write(outString)
