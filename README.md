@@ -1,5 +1,5 @@
 # AccelToolKit
-In this repo you can find a few usefull tools to use when working with accelerometer data processing or other projects.
+In this repo you can find a few useful tools to use when working with accelerometer data processing or other projects.
 
 ## concat.py
 Concatenates files in a directory containing a certain string in their name omitting their respective (but an initial) header line section of variable length into a single file. <br/>
